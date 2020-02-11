@@ -1,6 +1,6 @@
 pipeline {
 	agent any
-	triggers { cron('0 16 * * *') }
+	triggers { cron('10 16 * * *') }
 	stages {
 		stage("Get SCM branches") {
 			steps {
@@ -8,9 +8,19 @@ pipeline {
 				echo "This is Get SCM branches "
 				println env.JOB_NAME
 				println env.BUILD_NUMBER
-				// echo %BUILD_NUMBER%
-				// println "JOB_NAME: " + System.getenv("JOB_NAME")
-				// println "BUILD_NUMBER: " + System.getenv("BUILD_NUMBER")
+				println env.BUILD_ID
+				println env.BUILD_DISPLAY_NAME
+				println env.JOB_NAME
+				println env.JOB_BASE_NAME
+				println env.BUILD_TAG
+				println env.EXECUTOR_NUMBER
+				println env.NODE_NAME
+				println env.NODE_LABELS
+				println env.WORKSPACE
+				println env.JENKINS_HOME
+				println env.JENKINS_URL
+				println env.BUILD_URL
+				println env.JOB_URL
 				}
 				//echo %BUILD_NUMBER%
 			}
