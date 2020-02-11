@@ -6,10 +6,11 @@ pipeline {
 			steps {
 				script {
 				echo "This is Get SCM branches "
-				echo %BUILD_NUMBER%
-				//println "JOB_NAME: " + System.getenv("JOB_NAME")
-				//println "BUILD_NUMBER: " + System.getenv("BUILD_NUMBER")
+				// echo %BUILD_NUMBER%
+				// println "JOB_NAME: " + System.getenv("JOB_NAME")
+				// println "BUILD_NUMBER: " + System.getenv("BUILD_NUMBER")
 				}
+				echo %BUILD_NUMBER%
 			}
 		 }
 		 
