@@ -28,7 +28,7 @@ pipeline {
 		stage("Deploy to OpenShift") {
 			steps{
             	script {
-				echo "This is "Deploy to OpenShift"
+				echo "This is Deploy to OpenShift"
 				}
         	}
 		}
