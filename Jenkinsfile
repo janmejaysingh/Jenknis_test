@@ -1,5 +1,4 @@
 pipeline {
-	agent { any }
 	stages {
 		stage("Get SCM branches") {
 			steps {
