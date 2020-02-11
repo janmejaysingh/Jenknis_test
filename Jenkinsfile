@@ -1,6 +1,6 @@
 pipeline {
 	agent any
-	triggers { cron('H/30 * * * *') }
+	triggers { cron('H/60 * * * *') }
 	stages {
 		stage("Get SCM branches") {
 			steps {
