@@ -1,5 +1,5 @@
 pipeline {
-	agent { label Master }
+	agent any
 	stages {
 		stage("Get SCM branches") {
 			steps {
